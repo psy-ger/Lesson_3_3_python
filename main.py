@@ -62,3 +62,15 @@ else:
         second_list_v3.append(main_list[position])
 
     print([first_list_v3, second_list_v3])
+
+#v4
+if not main_list:
+    first_part, second_part = [], []
+elif len(main_list) == 1:
+    first_part, second_part = [main_list[0]], []
+else:
+    mid = (len(main_list) + 1) // 2
+    first_list_v4 = main_list[:mid]
+    second_list_v4 = main_list[mid:]
+
+print([first_list_v4, second_list_v4])
